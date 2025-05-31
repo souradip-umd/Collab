@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Collab: Controlled Decoding using Mixture of Agents for LLM Alignment" />
+    <meta property="og:description" content="Controlled decoding using mixture of agents for LLM alignment." />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:image:alt" content="Collab: Controlled Decoding using Mixture of Agents for LLM Alignment" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://avinashreddydev.github.io/scaling-mirage/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Collab: Controlled Decoding using Mixture of Agents for LLM Alignment" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- LinkedIn-specific Open Graph Tags -->
+    <meta property="article:author" content="Souradip Chakraborthy" />
+    <meta property="article:published_time" content="2025-01-01T00:00:00Z" />
+    <meta property="article:section" content="Artificial Intelligence" />
+    <meta property="article:tag" content="AI Research" />
+    <meta property="article:tag" content="Reasoning Models" />
+    <meta property="article:tag" content="Test-Time Scaling" />
+    <meta property="article:tag" content="Machine Learning" />
+    
+    <!-- WhatsApp-optimized Open Graph Tags -->
+    <meta property="og:image:secure_url" content="/og.png" />
+    <meta property="og:video" content="" />
+    <meta property="og:audio" content="" />
+    
+    <!-- LinkedIn Company/Organization -->
+    <meta property="og:see_also" content="https://saferrai-lab.org/" />
+    <meta property="og:see_also" content="https://www.umd.edu/" />
+    <meta property="og:see_also" content="https://www.ucf.edu/" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Collab: Controlled Decoding using Mixture of Agents for LLM Alignment" />
+    <meta name="twitter:description" content="Research on controlled decoding using mixture of agents for LLM alignment." />
+    <meta name="twitter:image" content="/og.png" />
+    <meta name="twitter:image:alt" content="Collab: Controlled Decoding using Mixture of Agents for LLM Alignment" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Academic research on test-time scaling in reasoning models, investigating whether thinking more at test-time truly leads to better reasoning performance." />
+    <meta name="keywords" content="AI, Alignment, Mixture of Agents, Controlled Decoding, LLM Alignment, Machine Learning, Artificial Intelligence, DeepSeek, OpenAI" />
+    <meta name="author" content="Souradip Chakraborthy, et al." />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #363636;
+        }
+      </style>
+    <title>Collab: Controlled Decoding using Mixture of Agents for LLM Alignment</title>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-6xl mx-auto bg-white shadow-lg">
+        <!-- Header -->
+        <div class="p-8">
+            <div class="text-center">
+                <h1 class="text-5xl text-primary font-normal mb-8 leading-tight">
+                    Collab: Controlled Decoding using Mixture of Agents for LLM Alignment
+                </h1>
+                
+                <!-- Venue Badge
+                <div class="mb-8">
+                    <span class="  px-6 py-2 rounded-lg font-semibold text-lg">
+                        Under Submission 2025
+                    </span>
+                </div> -->
+
+                <!-- Souradip Chakraborty, Sujay Bhatt, Udari Madhushani Sehwag, Soumya Suvra Ghosal, Jiahao Qiu, Mengdi Wang, Dinesh Manocha, Furong Huang, Alec Koppel, Sumitra Ganesh -->
+
+
+
+                
+                <!-- Authors Section -->
+                <div class="mb-8 text-lg leading-relaxed">
+                    <p class=" mb-4">
+                        <span class="font-normal text-blue-400">Souradip Chakraborthy</span><sup class="text-xs">1, 3</sup>, 
+                        <span class="font-normal text-blue-400">Sujay Bhatt</span><sup class="text-xs">3</sup>, 
+                        <span class="font-normal text-blue-400">Udari Madhushani Sehwag</span><sup class="text-xs">3</sup>,<br>
+                        <span class="font-normal text-blue-400">Soumya Suvra Ghosal</span><sup class="text-xs">1</sup>, 
+                        <span class="font-normal text-blue-400">Jiahao Qiu</span><sup class="text-xs">4</sup>, 
+                        <span class="font-normal text-blue-400">Mengdi Wang</span><sup class="text-xs">4</sup>, 
+                        <span class="font-normal text-blue-400">Dinesh Manocha</span><sup class="text-xs">1</sup>, 
+                        <span class="font-normal text-blue-400">Furong Huang</span><sup class="text-xs">1</sup>,<br>
+                        <span class="font-normal text-blue-400">Alec Koppel</span><sup class="text-xs">3</sup>, 
+                        <span class="font-normal text-blue-400">Sumitra Ganesh</span><sup class="text-xs">3</sup>
+                    </p>
+                </div>
+
+                <!-- Institutions -->
+                <div class=" text-base mb-6 leading-relaxed">
+                    <p>
+                        <sup class="text-xs">1</sup><a href="https://www.umd.edu/" >University of Maryland</a> &nbsp;&nbsp;
+                        <sup class="text-xs">3</sup><a href="https://umich.edu/" >JPMorgan Chase</a>
+                    </p>
+                    <p>
+                        <sup class="text-xs">4</sup><a href="https://www.princeton.edu/" class="">Princeton University</a> &nbsp;&nbsp;
+                        
+                    </p>
+                </div>
+
+                <!-- Contribution Notes -->
+                <!-- <div class=" text-sm mb-6 italic">
+                    <p>* denotes equal contribution</p>
+                    <p>† denotes equal advising</p>
+                </div> -->
+
+                <!-- Navigation Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mt-6">
+                    <a href="https://arxiv.org/pdf/2503.21720"
+                        class="bg-gray-800 text-white  px-6 py-2 rounded-full  font-semibold    transition-colors">
+                        📄 Paper
+                    </a>
+                    <a href="https://arxiv.org/pdf/2503.21720"
+                        class="bg-gray-800 text-white  px-6 py-2 rounded-full  font-semibold transition-colors">
+                        💾 Supplementary
+                    </a>
+                    <a href="#"
+                        class="bg-gray-800 text-white  px-6 py-2 rounded-full  font-semibold transition-colors">
+                        💻 Code
+                    </a>
+                    <a href="https://arxiv.org/pdf/2503.21720"
+                        class="bg-gray-800 text-white  px-6 py-2 rounded-full  font-semibold transition-colors">
+                        📊 arXiv
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Abstract Section -->
+        <div class="p-8 border-b border-gray-200 flex flex-col items-center justify-center max-w-4xl mx-auto">
+            
+
+            
+
+
+
+            <div class="max-w-4xl mx-auto text-justify leading-relaxed text-gray-700 space-y-4 text-lg">
+
+                <h1 class="text-3xl font-semibold mb-6 text-center text-primary underline">Abstract</h1>
+                Alignment of Large Language models (LLMs) is crucial for safe and trustworthy
+                deployment in applications. Reinforcement learning from human feedback (RLHF)
+                has emerged as an effective technique to align LLMs to human preferences, and
+                broader utilities, but it requires updating billions of model parameters which is computationally expensive. Controlled Decoding, by contrast, provides a mechanism
+                for aligning a model at inference time without retraining. However, single-agent
+                decoding approaches often struggle to adapt to diverse tasks due to the complexity
+                and variability inherent in these tasks. To strengthen the test-time performance
+                w.r.t the target task, we propose a mixture of agents-based decoding strategies
+                leveraging the existing off-the-shelf aligned LLM policies. Treating each prior
+                policy as an agent in the spirit of mixture of agent collaboration, we develop a
+                decoding method that allows for inference-time alignment through a token-level
+                selection strategy among multiple agents. For each token, the most suitable LLM is
+                dynamically chosen from a pool of models based on a long-term utility metric. This
+                policy-switching mechanism ensures optimal model selection at each step, enabling
+                efficient collaboration and alignment among LLMs during decoding. Theoretical
+                analysis of our proposed algorithm establishes optimal performance with respect to
+                the target task represented via a target reward, for the given off-the-shelf models.
+                We conduct comprehensive empirical evaluations with open-source aligned models
+                on diverse tasks and preferences, which demonstrates the merits of this approach
+                over single-agent decoding baselines. Notably, Collab surpasses the current SoTA
+                decoding strategy, achieving an improvement of up to 1.56x in average reward and
+                71.89% in GPT-4 based win-tie rate.
+            </div>
+        </div>
+
+        <!-- Main Results Figure -->
+
+        <div class="flex flex-col items-center justify-center max-w-4xl mx-auto">
+            <div class="p-8 border-b border-gray-200 block">
+                <!-- <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Key Findings</h2> -->
+                <h2 class="text-3xl font-semibold mb-6 text-center text-primary">
+                   Collab:  Mixture of Agent based Controlled Decoding for  Alignment`
+                </h2>
+                
+                <img src="/Users/avinashreddy/Desktop/apps/collab/main.png" alt="Main Results"
+                    class="w-full h-auto">
+                <p> <b>Figure 1:</b> The figure illustrates the optimal coordination between agents for response generation via
+                    switching, where Agent1 is a ChatAgent and Agent2 is a Chemical-Expert. In this collaborative
+                    response, the agents are switching smoothly at the word and phrase level to deliver a more detailed
+                    and complete response than they could individually. The switching demonstrates how both agents
+                    complement each other in explaining the complex process.</p>
+            </div>
+
+
+            <div class="p-8 border-b border-gray-400 block">
+                <h2 class="text-3xl font-semibold mb-6 text-center text-primary">Experimental Results : Collab</h2>
+                <img src="/Users/avinashreddy/Desktop/apps/collab/performance.png" alt="Main Results"
+                    class="w-full h-auto">
+                <p> <b>Figure 2:</b> In the above plots, we present the normalized average reward values        obtained using the
+                    corresponding setup outlined in Table 3. Agent-I, and Agent-II refers to the average reward obtained
+                    by the individual models with SoTA decoding. For the BoN agents sampling, we perform vanilla
+                    logit-based sampling using individual agents and select the best response w.r.t the target reward. Our
+                    analysis reveals that across all setups, Collab consistently outperforms other baselines
+                    demonstrating the importance of multi-agent decoding.
+                </p>
+            </div>
+
+
+            <div class="p-8 border-b border-gray-400 block max-w-4xl mx-auto flex flex-col items-center justify-center" >
+
+                <h2 class="text-3xl font-semibold mb-6 text-center text-primary">Theoretical Results : Collab</h2>
+                <img src="/Users/avinashreddy/Desktop/apps/collab/theory.png" alt="Abstract"
+                    class="w-full h-auto my-4">
+                <!-- <p class="text-center  mt-4"> <b>Figure 3:</b>
+                    Effective utilization of test-time budget: Given a fixed
+                    inference budget of 16K tokens, parallel thinking results in around
+                    22% and 47% more accuracy compared to Wait & Think more and
+                    Exact thinking TTBC respectively.
+                </p> -->
+            </div>
+
+
+        </div>
+
+
+        <!-- <p class="text-center text-gray-600 mt-4 italic">
+            Comparison of extended thinking vs. parallel thinking approaches across different reasoning benchmarks.
+        </p> -->
+    </div>
+
+   
+
+    <!-- BibTeX Section -->
+    <div class="p-8 bg-gray-50">
+        <h2 class="text-3xl font-semibold mb-6 text-center text-primary">BibTeX</h2>
+        <div class="bg-gray-100 p-6 rounded-lg border max-w-4xl mx-auto">
+            <pre class="text-sm text-gray-700 overflow-x-auto"><code>@article{chakraborty2025collab,
+  title={Collab: Controlled Decoding using Mixture of Agents for LLM Alignment},
+  author={Chakraborthy, Souradip and Bhatt, Sujay and Sehwag, Udari Madhushani and Ghosal, Soumya Suvra and Qiu, Jiahao and Wang, Mengdi and Manocha, Dinesh and Huang, Furong and Koppel, Alec and Ganesh, Sumitra},
+  journal={ICLR},
+  year={2025}
+}</code></pre>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
